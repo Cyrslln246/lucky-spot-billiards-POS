@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lucky Spot Billiards POS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="login-section">
+    <h2>Login to Lucky Spot Billiards POS</h2>
+    <input type="email" id="email" placeholder="Email" />
+    <input type="password" id="password" placeholder="Password" />
+    <button onclick="login()">Login</button>
+  </div>
+
+  <div id="pos-section" style="display:none;">
+    <h1>Welcome to Lucky Spot Billiards POS</h1>
+    <div id="admin-controls" style="display:none;">
+      <h3>Inventory Management</h3>
+      <input type="text" id="item-name" placeholder="Item name">
+      <input type="number" id="item-price" placeholder="Price">
+      <button onclick="addItem()">Add Item</button>
+      <ul id="inventory-list"></ul>
+    </div>
+
+    <h3>Sales & Expenses</h3>
+    <input type="text" id="sale-desc" placeholder="Description">
+    <input type="number" id="sale-amount" placeholder="Amount">
+    <button onclick="addSale()">Add</button>
+
+    <button onclick="downloadReport()">Download Report</button>
+  </div>
+
+  <script type="module" src="firebase-config.js"></script>
+  <script type="module" src="script.js"></script>
+</body>
+</html>

@@ -1,1 +1,4 @@
-body { font-family: Arial, sans-serif; background: #f9f9f9; color: #333; padding: 2rem; }
+body { font-family: Arial, sans-serif; padding: 20px; background: #f4f4f4; }
+input { margin: 5px; padding: 8px; }
+button { padding: 8px 12px; }
+#inventory-list { list-style-type: none; padding: 0; }
